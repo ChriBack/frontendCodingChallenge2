@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Front-End Challenge</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" title="Brandname">Brandname</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Menu Item 1<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                            <li><a href="#">Menu Item 5</a></li>
+                            <li><a href="#">Menu Item 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="products" role="main">
+            <div class="row">
+                <div class="col-xs-12 product-filter">
+                    <span class="filter-headline">Filter:</span>
+                    <div class="badge single-filter bg-meat">
+                        <label for="meat" class="checkbox-inline">
+                            <input type="checkbox" class="product-type" value="meat" id="meat" checked="checked">
+                            Meat
+                        </label>
+                    </div>
+                    <div class="badge single-filter bg-vegetable">
+                        <label for="vegetable" class="checkbox-inline">
+                            <input type="checkbox" class="product-type" value="vegetable" id="vegetable"
+                                   checked="checked">
+                            Vegetable
+                        </label>
+                    </div>
+                    <div class="badge single-filter bg-fruit">
+                        <label for="fruit" class="checkbox-inline">
+                            <input type="checkbox" class="product-type" value="fruit" id="fruit" checked="checked">
+                            Fruit
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="fruit">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see an Apple" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Apple <span class="badge pull-right bg-fruit" itemprop="category">Fruit</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Apple">
+                                    <span class="color-fruit">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="vegetable">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see an Aubergine" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Aubergine <span class="badge pull-right bg-vegetable"
+                                                itemprop="category">Vegetable</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Aubergine">
+                                    <span class="color-vegetable">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="fruit">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see a Banana" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Banana <span class="badge pull-right bg-fruit" itemprop="category">Fruit</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Banana">
+                                    <span class="color-fruit">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="vegetable">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see a Broccoli" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Broccoli <span class="badge pull-right bg-vegetable"
+                                               itemprop="category">Vegetable</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Broccoli">
+                                    <span class="color-vegetable">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="meat">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see a Chicken" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Chicken <span class="badge pull-right bg-meat" itemprop="category">Meat</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Chicken">
+                                    <span class="color-meat">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="fruit">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see an Orange" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Orange <span class="badge pull-right bg-fruit" itemprop="category">Fruit</span>
+                            </div>
+                            <div class="product-description"><p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Orange">
+                                    <span class="color-fruit">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="meat">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see Beef" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Beef <span class="badge pull-right bg-meat" itemprop="category">Meat</span>
+                            </div>
+                            <div class="product-description">
+                                <p itemprop="description">Lorem ipsum dolor sit amet,
+                                    consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Beef">
+                                    <span class="color-meat">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-type="vegetable">
+                    <article class="product" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-top">
+                            <img src="images/placeholder.png" class="img-responsive"
+                                 alt="In this picture you can see a Zucchini" itemprop="image">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-headline" itemprop="name">
+                                Zucchini <span class="badge pull-right bg-vegetable"
+                                               itemprop="category">Vegetable</span>
+                            </div>
+                            <div class="product-description"><p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetuer adispiscing elit. Aenean commodo ligula eget dolor. Aeneasn massa. Cum
+                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </div>
+                            <div class="product-anchor">
+                                <a href="#" itemprop="url" title="More info about the product Zucchini">
+                                    <span class="color-vegetable">❯</span> More info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

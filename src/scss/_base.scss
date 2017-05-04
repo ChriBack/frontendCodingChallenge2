@@ -1,0 +1,55 @@
+$gray-darker: #777777;
+$gray: #c8c8c8;
+$white: #fff;
+$color-fruit: #f39200;
+$color-vegetable: #2b9030;
+$color-meat: #e73c01;
+
+body {
+  background-color: $gray;
+  min-width:421px;
+}
+
+label {
+  margin: 0;
+}
+
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"],
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin: 0 0 0 -20px;
+}
+
+.bg-fruit {
+  background-color: $color-fruit;
+}
+
+.bg-vegetable {
+  background-color: $color-vegetable;
+}
+
+.bg-meat {
+  background-color: $color-meat;
+}
+
+.color-fruit {
+  color: $color-fruit;
+}
+
+.color-vegetable {
+  color: $color-vegetable;
+}
+
+.color-meat {
+  color: $color-meat;
+}
